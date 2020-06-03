@@ -83,6 +83,7 @@ public class ListActivity extends AppCompatActivity {
         fcAdapter = new FlashcardAdapter(flashcardList);
         listView.setAdapter(fcAdapter);
         setListeners();
+        //change?
 
     }
 
