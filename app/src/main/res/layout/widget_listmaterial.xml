@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/listMaterial_textView_flashcardTitleString"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/flashcardTitle"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/listMaterial_textView_numOfFlashcards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listMaterial_textView_numOfFlashcards"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/numOfFlashcards"
+        android:textAlignment="center"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listMaterial_textView_flashcardTitleString" />
+
+    <TextView
+        android:id="@+id/listMaterial_textView_dueDate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/dueDateInt"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintStart_toEndOf="@+id/listMaterial_textView_dueDateString"
+        app:layout_constraintTop_toTopOf="@+id/listMaterial_textView_dueDateString" />
+
+    <SeekBar
+        android:id="@+id/listMaterial_seekBar_priority"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:max="1"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/listMaterial_textView_flashcardTitleString"
+        app:layout_constraintTop_toBottomOf="@+id/listMaterial_textView_flashcardTitleString" />
+
+    <ToggleButton
+        android:id="@+id/listMaterial_toggleButton_activeState"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="false"
+        android:textOff="@string/inactive"
+        android:textOn="@string/active"
+        android:visibility="visible"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/listMaterial_textView_dueDate"
+        app:layout_constraintTop_toTopOf="@+id/listMaterial_textView_dueDate" />
+
+    <TextView
+        android:id="@+id/listMaterial_textView_dueDateString"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dueDateString"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintStart_toStartOf="@+id/listMaterial_seekBar_priority"
+        app:layout_constraintTop_toBottomOf="@+id/listMaterial_seekBar_priority" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+
+  [ {
+    "flashcardTitle": "test flashcard 1",
+    "dueDate": "12/04/20",
+    "numOfFlashcards":"2",
+    "flashCards": [
+      {
+        "frontSide":"Which number card is this in the list?",
+        "backSide": "1"
+      },
+      {
+        "frontSide": "How many fingers do you have",
+        "backSide": "5"
+      }
+    ]
+
+  },
+  {
+    "flashcardTitle": "test flashcard 2",
+    "dueDate": "12/04/20",
+    "numOfFlashcards":"5",
+    "flashCards": [
+      {
+        "frontSide":"Which number card is this in the list?",
+        "backSide": "1"
+      },
+      {
+        "frontSide": "How many fingers do you have",
+        "backSide": "5"
+      }
+    ]
+
+  },
+    {
+      "flashcardTitle": "test flashcard 3",
+      "dueDate": "12/04/20",
+      "numOfFlashcards":"6",
+      "flashCards": [
+        {
+          "frontSide":"Which number card is this in the list?",
+          "backSide": "1"
+        },
+        {
+          "frontSide": "How many fingers do you have",
+          "backSide": "5"
+        }
+      ]
+
+    }
+  ]
